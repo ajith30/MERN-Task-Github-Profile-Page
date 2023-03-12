@@ -53,10 +53,12 @@ body {
   margin: 60px auto 0;
 }
 .side {
+  display: flex;
   height: 500px;
   width: 300px;
   border-radius: 10px;
-  flex: 0 0 300px;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .next-box {
@@ -100,7 +102,7 @@ body {
 
 /* Making left side box and right side box responsive */
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .container {
     flex-direction: column;
     /* flex-wrap: wrap; */
